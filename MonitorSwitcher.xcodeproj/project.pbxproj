@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC07D3B625C0DB6400926C39 /* DDC.c in Sources */ = {isa = PBXBuildFile; fileRef = EC07D3B325C0DB6400926C39 /* DDC.c */; };
+		EC07D3DE25C0F2CC00926C39 /* ddcctl.m in Sources */ = {isa = PBXBuildFile; fileRef = EC07D3DD25C0F2CC00926C39 /* ddcctl.m */; };
 		EC1313A425B78ECF000D34E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1313A325B78ECF000D34E9 /* AppDelegate.swift */; };
 		EC1313A625B78ECF000D34E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1313A525B78ECF000D34E9 /* ContentView.swift */; };
 		EC1313A825B78ED0000D34E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1313A725B78ED0000D34E9 /* Assets.xcassets */; };
@@ -34,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC07D3AF25C0DB6300926C39 /* MonitorSwitcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonitorSwitcher-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC07D3B325C0DB6400926C39 /* DDC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DDC.c; sourceTree = "<group>"; };
+		EC07D3B425C0DB6400926C39 /* DDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDC.h; sourceTree = "<group>"; };
+		EC07D3DD25C0F2CC00926C39 /* ddcctl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ddcctl.m; sourceTree = "<group>"; };
+		EC07D3E225C0FDFA00926C39 /* ddcctl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ddcctl.h; sourceTree = "<group>"; };
 		EC1313A025B78ECF000D34E9 /* MonitorSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1313A325B78ECF000D34E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC1313A525B78ECF000D34E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +55,7 @@
 		EC1313C025B78ED0000D34E9 /* MonitorSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonitorSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1313C425B78ED0000D34E9 /* MonitorSwitcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorSwitcherUITests.swift; sourceTree = "<group>"; };
 		EC1313C625B78ED0000D34E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC1313D525B794CD000D34E9 /* switch.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = switch.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 				EC1313B825B78ED0000D34E9 /* MonitorSwitcherTests */,
 				EC1313C325B78ED0000D34E9 /* MonitorSwitcherUITests */,
 				EC1313A125B78ECF000D34E9 /* Products */,
+				EC07D3AF25C0DB6300926C39 /* MonitorSwitcher-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +107,9 @@
 		EC1313A225B78ECF000D34E9 /* MonitorSwitcher */ = {
 			isa = PBXGroup;
 			children = (
+				EC07D3DD25C0F2CC00926C39 /* ddcctl.m */,
+				EC07D3B325C0DB6400926C39 /* DDC.c */,
+				EC07D3B425C0DB6400926C39 /* DDC.h */,
 				EC1313A325B78ECF000D34E9 /* AppDelegate.swift */,
 				EC1313A525B78ECF000D34E9 /* ContentView.swift */,
 				EC1313A725B78ED0000D34E9 /* Assets.xcassets */,
@@ -105,6 +117,8 @@
 				EC1313AF25B78ED0000D34E9 /* Info.plist */,
 				EC1313B025B78ED0000D34E9 /* MonitorSwitcher.entitlements */,
 				EC1313A925B78ED0000D34E9 /* Preview Content */,
+				EC1313D525B794CD000D34E9 /* switch.sh */,
+				EC07D3E225C0FDFA00926C39 /* ddcctl.h */,
 			);
 			path = MonitorSwitcher;
 			sourceTree = "<group>";
@@ -202,6 +216,7 @@
 				TargetAttributes = {
 					EC13139F25B78ECF000D34E9 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					EC1313B425B78ED0000D34E9 = {
 						CreatedOnToolsVersion = 12.1;
@@ -265,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC07D3B625C0DB6400926C39 /* DDC.c in Sources */,
+				EC07D3DE25C0F2CC00926C39 /* ddcctl.m in Sources */,
 				EC1313A625B78ECF000D34E9 /* ContentView.swift in Sources */,
 				EC1313A425B78ECF000D34E9 /* AppDelegate.swift in Sources */,
 			);
@@ -433,7 +450,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MonitorSwitcher/MonitorSwitcher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonitorSwitcher/Preview Content\"";
@@ -446,6 +465,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.partkyle.MonitorSwitcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MonitorSwitcher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -455,7 +476,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MonitorSwitcher/MonitorSwitcher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonitorSwitcher/Preview Content\"";
@@ -468,6 +491,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.partkyle.MonitorSwitcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MonitorSwitcher-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
